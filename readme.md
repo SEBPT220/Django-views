@@ -785,23 +785,21 @@ And update the `artist_detail.html` template to include delete functionality:
 <!-- tunr/templates/tunr/artist_detail.html -->
 {% extends 'tunr/base.html' %} {% block content %}
 
-<h2>
-	{{ artist.name }} <a href="{% url 'artist_edit' pk=artist.pk %}">(edit)</a>
-</h2>
+<h2>{{ artist.name }} <a href="{% url 'artist_edit' pk=artist.pk %}">(edit)</a></h2>
+
 <h4>{{ artist.nationality }}</h4>
 
 <img src="{{ artist.photo_url }}" alt="" class="artist-photo" />
+
 <a href="{% url 'artist_delete' pk=artist.pk %}">Delete</a>
 <h3>Songs <a href="{% url 'song_create' %}">(+)</a></h3>
-<ul>
-	{% for song in artist.songs.all %}
-	<li>
-		<a href="{% url 'song_detail' pk=song.pk %}"
-			>{{ song.title }}-{{ song.album }}</a
-		>
-	</li>
-	{% endfor %}
-</ul>
+	<ul>
+		{% for song in artist.songs.all %}
+		<li>
+		<a href="{% url 'song_detail' pk=song.pk %}">{{ song.title }}-{{ song.album }}</a>
+		</li>
+		{% endfor %}
+	</ul>
 {% endblock %}
 ```
 

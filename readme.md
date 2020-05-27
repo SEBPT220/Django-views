@@ -50,9 +50,8 @@ pipenv shell
 ## View Functions
 
 Using the `Artist` and `Song` models that we have already implemented, let's
-create views to display our application's data! Views are really similar to
-controllers in the other languages we have looked at so far. They pass data to
-our templates.
+create templates to display our application's data! Views in Django are similar to
+controllers in Express. They pass data to our templates.
 
 ```python
 # tunr/views.py

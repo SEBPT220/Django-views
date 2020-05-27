@@ -210,6 +210,7 @@ song list in your browser, what path will you use?
 <summary>Solution: Song List URL</summary>
 
 ```html
+<!-- tunr/templates/tunr/song_list.html -->
 <h2>Songs</h2>
 <ul>
   {% for song in songs %}

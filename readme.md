@@ -297,7 +297,7 @@ Create the show page for the song. Also, link to this view in both the
 `artist_detail` and `song_list` templates.
 
 <details>
-<summary>Solution: Song Show View in tunr/views.py</summary>
+<summary>Solution: Song Show View in `tunr/views.py`</summary>
 
 ```python
 def song_detail(request, pk):
@@ -307,7 +307,7 @@ def song_detail(request, pk):
 
 </details>
 <details>
-<summary>Solution: Song Show URL in tunr/urls.py</summary>
+<summary>Solution: Song Show URL in `tunr/urls.py`</summary>
 
 ```python
 path('songs/<int:pk>', views.song_detail, name='song_detail')
@@ -315,7 +315,7 @@ path('songs/<int:pk>', views.song_detail, name='song_detail')
 
 </details>
 <details>
-<summary>Solution: Song Show Template in tunr/templates/tunr/song_detail.html</summary>
+<summary>Solution: Song Show Template in `tunr/templates/tunr/song_detail.html`</summary>
 
 ```html
 <h2>{{ song.title }} <a href="">(edit)</a></h2>
@@ -326,7 +326,7 @@ Album: {{ song.album }}
 
 </details>
 <details>
-<summary>Solution: Artist Show Template Update</summary>
+<summary>Solution: Artist Show Template Update in `tunr/templates/tunr/song_detail.html`</summary>
 
 ```html
 <a href="{% url 'song_detail' pk=song.pk %}">
@@ -336,7 +336,7 @@ Album: {{ song.album }}
 
 </details>
 <details>
-<summary>Solution: Song List Template Update</summary>
+<summary>Solution: Song List Template Update in `tunr/templates/tunr/song_list.html`</summary>
 
 ```html
 <a href="{% url 'song_detail' pk=song.pk %}">

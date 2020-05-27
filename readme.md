@@ -751,7 +751,6 @@ def song_edit(request, pk):
     if request.method == "POST":
         form = SongForm(request.POST, instance=song)
         if form.is_valid():
-            artist = form.save()
             return redirect('song_detail', pk=song.pk)
     else:
         form = SongForm(instance=song)

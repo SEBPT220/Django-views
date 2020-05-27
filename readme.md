@@ -281,7 +281,7 @@ tag to the `href` attribute.
 
 In the `href` attribute, let's add a URL tag. First, we use the name of the URL
 that we declared back in the `url` file. Then we need to pass the primary key of
-that artist into that url. Update your `artist_detail.html` file with the
+that artist into that url. Update your `artist_list.html` file with the
 following code:
 
 ```html

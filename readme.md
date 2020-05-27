@@ -100,7 +100,7 @@ Here's how to fix those in VSCode.
 
 	  "python.linting.pylintArgs": [
 	    "--load-plugins=pylint_django",
-	    "--disable=missing-docstring"
+	    "--disable=missing-docstring,invalid-name"
 	  ]
 
 	```

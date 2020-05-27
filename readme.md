@@ -89,6 +89,23 @@ def song_list(request):
 
 </details>
 
+## Running into "Class has no objects member" & "Missing Docstring" Compilation Errors?
+Here's how to fix those in VSCode.
+
+1. Install pylint-django by running this command in your project root: `$ pipenv install pylint-django`
+1. Then in VSCode, open up your user `settings.json` file by pressing `Ctrl + Shift + P` and selecting `Preferences: Open Settings (JSON)`.
+1. Add the following key-value pair to the object in `settings.json`:
+
+	```json
+
+	  "python.linting.pylintArgs": [
+	    "--load-plugins=pylint_django",
+	    "--disable=missing-docstring"
+	  ]
+
+	```
+1. Press `Command + S` to save your changes. The linting errors should now disappear!
+
 ## URLs
 
 Let's go ahead at how we will access these views -- through the URLs!

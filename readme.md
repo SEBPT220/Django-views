@@ -613,7 +613,8 @@ we can just insert our form like `{{ form.as_p }}`. The `.as_p` just formats the
 form nicely, you could also just do `{{ form }}` but it would be ugly. We also
 need a submit button and then we are good! Errors are handled for us in-line!
 
-Read more about [csrf](https://portswigger.net/web-security/csrf).
+Read about [csrf attacks](https://portswigger.net/web-security/csrf).
+Read about [csrf tokens](https://portswigger.net/web-security/csrf/tokens).
 
 In our `artist_list.html` file, update the `href` to include a path to our
 `artist_create` url.

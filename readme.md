@@ -180,7 +180,7 @@ In the `tunr` directory, add a `templates` directory and a `tunr` subdirectory.
 Here, create a file called `artist_list.html` and add the following code. In
 your browser, navigate to `localhost:8000` and see what appears!
 
-> NOTE: If you do not have your server running already, run the command `python manage.py runserver` in the virtual environment of your project folder in your
+> NOTE: If you do not have your server running already, run the command `python3 manage.py runserver` in the virtual environment of your project folder in your
 > terminal.
 
 ```html

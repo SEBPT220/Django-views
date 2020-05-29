@@ -326,7 +326,7 @@ Album: {{ song.album }}
 
 </details>
 <details>
-<summary>Solution: Artist Show Template Update in `tunr/templates/tunr/song_detail.html`</summary>
+<summary>Solution: Artist Show Template Update in `tunr/templates/tunr/artist_detail.html`</summary>
 
 ```html
 <a href="{% url 'song_detail' pk=song.pk %}">
@@ -755,6 +755,7 @@ def song_edit(request, pk):
     if request.method == "POST":
         form = SongForm(request.POST, instance=song)
         if form.is_valid():
+	    song = form.save()
             return redirect('song_detail', pk=song.pk)
     else:
         form = SongForm(instance=song)

@@ -89,7 +89,7 @@ def song_list(request):
 
 </details>
 
-## Running into "Class has no objects member" & "Missing Docstring" Compilation Errors?
+## Running into "Class has no objects member" & "Missing Docstring" Linting Errors?
 Here's how to fix those in VSCode.
 
 1. Install pylint-django by running this command in your project root: `$ pipenv install pylint-django`

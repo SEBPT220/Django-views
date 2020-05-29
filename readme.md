@@ -93,7 +93,7 @@ def song_list(request):
 Here's how to fix those in VSCode.
 
 1. Install pylint-django by running this command in your project root: `$ pipenv install pylint-django`
-1. Then in VSCode, open up your user `settings.json` file by pressing `Ctrl + Shift + P` and selecting `Preferences: Open Settings (JSON)`.
+1. Then in VSCode, open up your user `settings.json` file by pressing `Command + Shift + P` and selecting `Preferences: Open Settings (JSON)`.
 1. Add the following key-value pair to the object in `settings.json`:
 
 	```json

@@ -863,6 +863,9 @@ Album: {{ song.album }} {% endblock %}
 
 </details>
 
+## Bonus: Authentication & Authorization
+
+Implement signup/login/logout! Follow [this tutorial](https://git.generalassemb.ly/seir-622/django-auth).
 ## Bonus: Jinja
 
 Jinja is an awesome templating language for Django. It takes the place of Django

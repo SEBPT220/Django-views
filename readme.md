@@ -615,7 +615,7 @@ need a submit button and then we are good! Errors are handled for us in-line!
 
 Watch this 3-minute video about [csrf attacks](https://www.youtube.com/watch?v=m0EHlfTgGUU).
 Read about how [csrf tokens](https://portswigger.net/web-security/csrf/tokens) can be used 
-to prevent such attachks.
+to prevent such attacks.
 
 In our `artist_list.html` file, update the `href` to include a path to our
 `artist_create` url.

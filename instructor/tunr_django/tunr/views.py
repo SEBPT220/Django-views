@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Artist, Song
-from .forms import ArtistForm
+from .forms import ArtistForm, SongForm
 # Create your views here.
 
 # Role of controller
@@ -34,3 +34,14 @@ def artist_create(request):
       form = ArtistForm()
 
     return render(request, 'artist_form.html', {'form': form})
+
+def song_create(request):
+    if request.method == 'POST':
+      form = SongForm(request.POST)
+      if form.is_valid():
+        song = form.save()
+        return redirect('song_detail', pk=song.pk)
+    else:
+      form = SongForm()
+
+    return render(request, 'song_form.html', {'form': form})
